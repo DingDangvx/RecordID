@@ -10,4 +10,7 @@
     "airtable": "^0.12.2"
       }
 }
+"scripts": {
+  "heroku-prebuild": "echo 'Increasing timeout' && npm install -g heroku && heroku plugins:install heroku-builds && heroku builds:set --timeout=1200"
+}
 
