@@ -1,5 +1,5 @@
 {
-  "name": "IDApp",
+  "name": "secret-dawn-56744",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
@@ -8,7 +8,6 @@
   "dependencies": {
     "express": "^4.17.1",
     "airtable": "^0.14.0"
-    // Add other dependencies if needed
-  }
+      }
 }
 
