@@ -4,6 +4,10 @@ const Airtable = require('airtable');
 const app = express();
 const port = process.env.PORT || 3000;
 
+app.get('/', (req, res) => {
+    res.send('Hello, this is your Knowledge Base Editor!');
+});
+
 // Replace 'YOUR_API_KEY' and 'YOUR_BASE_ID' with your actual Airtable API key and base ID
 const base = new Airtable({ apiKey: 'patbWbDMVQWxvbnbz.5a2c8c01191c461a1bcec9599c8d97aa697b18c5f63dd0edc3283f3948933d1b' }).base('appcokJKIHCJbmZRC');
 
