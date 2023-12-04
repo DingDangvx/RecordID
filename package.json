@@ -3,14 +3,11 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "heroku-prebuild": "echo 'Increasing timeout' && npm install -g heroku && heroku plugins:install heroku-builds && heroku builds:set --timeout=1200"
   },
   "dependencies": {
     "express": "^4.17.1",
     "airtable": "^0.12.2"
-      }
+  }
 }
-"scripts": {
-  "heroku-prebuild": "echo 'Increasing timeout' && npm install -g heroku && heroku plugins:install heroku-builds && heroku builds:set --timeout=1200"
-}
-
