@@ -15,7 +15,7 @@ app.get('/get-user-record', (req, res) => {
     const userName = req.query.userName;
 
     base('Knowledge Base').select({
-        filterByFormula: `{Name of KB} = '${userName}'`,
+        filterByFormula: `{Full Name} = '${userName}'`,
         maxRecords: 1
     }).firstPage((err, records) => {
         if (err) {
