@@ -1,0 +1,14 @@
+{
+  "name": "IDApp",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "airtable": "^0.14.0"
+    // Add other dependencies if needed
+  }
+}
+
